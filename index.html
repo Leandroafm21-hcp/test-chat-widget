@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Chat Widget (Development)</title>
+    <script
+      id="housecall-pro-chat-bubble"
+      src="https://bc6c-2804-1b3-6600-ca7b-7c04-248c-9e00-3a3.ngrok-free.app/proChat.js"
+      type="text/javascript"
+      data-color="#2378cf"
+      data-organization="00000000-0000-0000-0000-000000000000"
+      defer
+    ></script>
+
+    <script>
+      const delay = (delayInms) => {
+        return new Promise((resolve) => setTimeout(resolve, delayInms));
+      };
+
+      const sample = async () => {
+        console.log("waiting...");
+        let delayres = await delay(3000);
+        console.log("finish");
+      };
+
+      sample();
+    </script>
+
+    <script>
+      sample();
+    </script>
+  </head>
+  <body>
+    <h1>Test Chat for Plumbing, Inc.</h1>
+  </body>
+</html>
